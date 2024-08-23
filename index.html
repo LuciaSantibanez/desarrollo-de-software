@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico HTML Lucía Santibañez</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #d588a595;
+        }
+
+        header, footer{
+            background-color: #900C3F;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+        }
+        main{
+            padding: 10px;
+        }
+        section{
+            margin-bottom: 10px;
+            background-color: #fdedec;
+            padding: 15px;
+            border-radius: 1cm;
+        }
+        article{
+            margin-bottom: 10px;
+            background-color: #fdedec;
+            padding: 15px;
+            border-radius: 1cm;
+        }
+        table{
+            width: 100%;
+            border-collapse:collapse ;
+        }
+        th, td{
+            border:2px solid #900C3F;
+            padding: 8px;
+            text-align: center;
+        }
+        tfoot{
+            background-color: #900C3F;
+            font-weight: bold;
+            color: #fff;
+            
+        }
+        #navencabezado{
+            background-color: #fff;
+            border-radius: 1cm;
+            font-weight: bold;
+            margin-left: 38%;
+            margin-right: 38%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header> 
+        <h1>Encabezado principal</h1>
+        <nav id="navencabezado">
+            <a href="#Estructura" >Estructura</a> <br> 
+            <a href="#Multimedia" >Multimedia</a> <br>
+            <a href="#Formulario" >Formulario</a> <br>   
+            <a href="#tabla">Tabla</a> 
+        </nav>
+    </header>
+
+    <main>
+         <section>
+            <div id="Estructura"> 
+                <h2>1.Estructura basica del documento HTLM </h2>
+                <p>
+                    Este documento HTL tiene una estructura básica que incluye 
+                    la declaración de DOCTYPE, etiquetas de metadatos y un título. <br>
+                    Información Complementaria. <br>
+                    2024 Trabajo Practico de HTML
+                </p>
+            </div>
+         </section>
+        <section>
+            <div>
+                <h2>2.Encabezados y propiedades del texto
+                </h2>
+                <p>
+                    <b>Este es un texto en negrita.</b> <br>
+                    <em>Este es un texto en cursiva.</em> <br>
+                    <u>Este es un texto subrayado.</u>
+                    <p><mark>Este es un texto resaltado</mark></p>
+                    <h1>Este es un h1</h1>
+                    <h2>Este es un h2</h2>
+                    <h3>Este es  un h3</h3>
+                    <h4>Este es un h4</h4>
+                    <h5>Este es  un h5</h5>
+                    <h6>Este es un h6</h6>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>3.Divisiones y agrupacion de contenido</h2>
+        <div>
+            <h3>Sección 1</h3>
+            <p>Contenido de la primera sección agrupada en un div.</p>
+        </div>
+        <div>
+            <h3>Sección 2</h3>
+            <p>Contenido de la segunda sección agrupada en un div.</p>
+        </div>
+    </section>
+
+        <section>
+            <div>
+                <h2>4.Enlaces y listas</h2>
+                <p>Visita nuestro <a href="https://www.google.com">sitio web</a> para más información.</p>
+                <h4>Enlaces internos:</h4>
+                <nav>
+                    <a href="#Estructura" >Estructura</a> <br> 
+                    <a href="#Multimedia" >Multimedia</a> <br>
+                    <a href="#Formulario" >Formulario</a>    
+                </nav>
+               
+                
+                <h5>Lista desordenada:</h5>
+                <ul>
+                    <li>Primer item de una lista desordenada</li>
+                    <li>Segundo item de una lista desordenada</li>
+                </ul>
+        
+                <h5>Lista ordenada:</h5>
+                <ol>
+                    <li>Primer item de una lista ordenada</li>
+                    <li>Segundo item de una lista ordenada</li>
+                </ol>
+        
+            </div>
+
+        </section>
+
+        <section>
+            <div id="Multimedia">
+                <h2>5. Elementos multimedia</h2>
+                <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen-930x487.jpg" 
+            width="200px"
+            alt="Es una imagen"
+            />
+            <video src="https://video-previews.elements.envatousercontent.com/5b3b6876-9689-4cfe-9692-1cf061a156f6/watermarked_preview/watermarked_preview.mp4"
+            controls width="400px" height="400px"
+            >
+            </div>
+            <div>
+                <audio src="https://download.blender.org/peach/trailer/trailer_1080p.ogg"
+           controls>
+            </div>
+        </section>
+
+        <section>
+            <div id="tabla">
+                <h2>6 Tablas</h2>
+                <table>
+                    <thead>
+                        <tr> 
+                            <th>Columna 1</th>
+                            <th>Columna 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dato 1</td>
+                            <td>Dato 2</td>
+                        </tr>
+                        <tr>
+                            <td>Dato 3</td>
+                            <td>Dato 4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot> 
+                        <tr>
+                            <td>Total </td>
+                            <td>Total</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <div id="Formulario">
+                <h3>7 Formulario</h3>
+                <form>
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre">    
+                    
+                        <label for="">Email</label>
+                        <input type="email" placeholder="example@gmail.com" >
+                    
+                        <label for="">Mensaje</label>
+                        <textarea placeholder=""></textarea>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <article id="articulo">
+            <h1>7. Artículo</h1>
+            <p>Este es el contenido principal del artículo.</p>
+            <aside id="informacionRelacionada">
+                <h1>7.1 Información Relacionada</h1>
+                <p>Este es un cuadro de información adicional relacionado con el artículo.</p>
+            </aside>
+        </article><br>
+
+
+    </main>
+
+      <footer>
+       <div>
+        <p><b>2024 Trabajo Práctico de HTML</b></p>
+        <p>Lucía Santibañez</p>
+        <p>50157</p>
+       </div>
+    </footer>
+
+</body>
+
+</html>
